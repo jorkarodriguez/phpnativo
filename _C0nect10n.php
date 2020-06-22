@@ -1,6 +1,6 @@
 <?php 	
 
-		function _conectar (){
+		function _conectar(){
 	date_default_timezone_set("America/Guatemala");
     //ubicacion del servidor de la base de datos
     $server = "localhost";

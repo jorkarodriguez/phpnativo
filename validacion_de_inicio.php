@@ -5,6 +5,8 @@
     $conexion = _conectar();
     $usuarios = strip_tags ( $_POST ['Nikname'] );
     $password= strip_tags(sha1( $_POST ['Password']));
+    //echo "usuario ".$usuarios." password :   ".$password ;
+
     $consulta=mysqli_query ($conexion,"SELECT * FROM  users WHERE nikname='".mysqli_real_escape_string($conexion,$usuarios)."' AND password ='".mysqli_real_escape_string($conexion,$password)."';");    
     if($existe = mysqli_fetch_array($consulta)){
         $hoy=date("y-m-d H:i:s");
