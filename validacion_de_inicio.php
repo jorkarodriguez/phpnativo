@@ -32,6 +32,4 @@
         //echo '<meta http-equiv="Refresh" content="0;url=login.html">';
     }
     mysqli_close($conexion);
-
-
  ?>
