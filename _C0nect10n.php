@@ -11,7 +11,7 @@
     //datos de Conexion, primer parametro servidor, usuario,password
     $conectID = mysqli_connect($server,$dbuser,$dbpass);
     //base de datos a utilizar
-    $dbdata = "repaso";
+    $dbdata = "jorkablog";
     mysqli_select_db($conectID,$dbdata);
     mysqli_query ($conectID,"SET NAMES 'utf8'");
 	return $conectID;

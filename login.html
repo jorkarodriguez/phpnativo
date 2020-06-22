@@ -6,7 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.0.1">
-    <title>Signin Template · Bootstrap</title>
+    <link rel="icon"type="image/png" href="images\jorkablogicon.png">
+    <title>JorkaBlog</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
     <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -31,20 +32,14 @@
     <link href="css/signin.css" rel="stylesheet">
   </head>
   <body class="text-center" onload="carga()">
-  	<div class="alert alert-warning alert-dismissible fade show" role="alert">
-  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-</div>
   <form class="form-signin" action="validacion_de_inicio.php" method="post">
-  <h1 class="h3 mb-3 font-weight-normal">Porfabor inica sesion</h1>
+  <h1 class="h3 mb-3 font-weight-normal">Inica Sesion</h1>
   <label for="inputEmail" class="sr-only">Nikname</label>
   <input type="text" id="Nikname" name="Nikname" class="form-control" placeholder="Nikname	" required autofocus>
   <label for="inputPassword" class="sr-only">Password</label>
   <input type="password" id="Password" name="Password" class="form-control" placeholder="Password" required>
   <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  <p class="mt-5 mb-3 text-muted">&copy; 2017-2020</p>
+  <p id="demo" class="mt-5 mb-3 text-muted">&copy;2020</p>
   <a href="register.html" class="btn btn-lg btn-success btn-block" >registrar</a>
   </form>
   </body>
@@ -53,8 +48,13 @@
 <script type="text/javascript">
 		
 		function carga(){
+      var x = document.getElementById("demo");   // Get the element with id="demo"
+      x.innerText=Date.now().getFullYear();
 
-			alert("hola");
+      
+     
+      
+      
 		}
 
 </script>
